@@ -1,6 +1,4 @@
-use std::sync::mpsc;
-use std::sync::Arc;
-use std::sync::Mutex;
+use std::sync::{Arc, Mutex, mpsc};
 use std::thread;
 
 pub enum ThreadPoolStatus {
@@ -97,7 +95,6 @@ impl Worker {
                     let res: ThreadPoolStatus = job();
 
                     if let ThreadPoolStatus::Terminate = res {
-                        println!("Server shutdown request received");
                         callback();
                     }
                 }

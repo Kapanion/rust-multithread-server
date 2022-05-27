@@ -1,15 +1,45 @@
+html{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
 body{
     background-color: #141414ff;
 }
 
 h1{
     text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
     color: #faa549ff;
 }
 
 p{
     text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
     color: #b7d0f1ff;
+}
+
+.form_stuff {    
+    display: block;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.input_box{
+    border: 0;
+    border-bottom: 2px solid #b7d0f1ff;    
+}
+
+.button{
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
 }
