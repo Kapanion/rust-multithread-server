@@ -1,4 +1,4 @@
-use std::sync::{Arc, Mutex, mpsc};
+use std::sync::{mpsc, Arc, Mutex};
 use std::thread;
 
 pub enum ThreadPoolStatus {
@@ -31,7 +31,6 @@ impl ThreadPool {
         assert!(size > 0);
 
         let (sender, receiver) = mpsc::channel();
-        // let (backwards_sender, backwards_receiver) = mpsc::channel();
 
         let receiver = Arc::new(Mutex::new(receiver));
 
