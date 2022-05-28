@@ -4,7 +4,7 @@ The server listens for TCP connections at address `127.0.0.1:7878`. Several page
 
 - `127.0.0.1:7878` - Default page, simple HTML.
 - `127.0.0.1:7878/sleep` - Server responds with a 5 second delay. This is made for testing its multithreaded aspect.
-- `127.0.0.1:7878/shutdown` - Asks for the password, and if it's correctly provided, shuts the server down.
+- `127.0.0.1:7878/shutdown` - Asks for the password, and if it's correctly provided, shuts the server down. The password is `rust7878`.
 - `127.0.0.1:7878/[non-existent link]` - Gives us the "404 Not Found" page.
 
 ## How to Run
